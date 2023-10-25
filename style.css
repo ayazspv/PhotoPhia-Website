@@ -1,0 +1,311 @@
+body {
+    font-family: montserrat;
+    min-width: 1000px;
+    width: 100%;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 75px;
+    margin: 10px 0 0 0;
+    background: var(--Background-PhotoPhia, linear-gradient(180deg, #120D31 36.46%, #005C69 100%));
+}
+a {
+    text-decoration: none;
+    color: #F1FFFA;
+}
+@font-face {
+    font-family: Montserrat;
+    src: url(font/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+.header-head {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.main-menu {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+}
+.main-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1000px;
+}
+.menu1, .menu2, .menu3, .menu4 {
+    border-right: solid 1px #f1fffa;
+    padding: 0 30px 0 0;
+}
+.main-menu > section > a {
+    text-shadow: 0 0 15px #f1fffa ;
+}
+.menu6 > a {
+    border: solid 1px #f18f01;
+    padding: 5px 10px;
+    border-radius: 7px;
+    color: #f18f01;
+}
+#contact-us-menu {
+    text-shadow: 0 0 15px #f18f01;
+}
+#selected-menu {
+    font-weight: bold;
+    border-bottom: solid 2px #f1fffa;
+    padding: 0 0 5px 0;
+}
+#contact-us-menu:hover {
+    background-color: #f18f01;
+    color: #f1fffa;
+    transition: 0.2s ease;
+}
+.header-body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header-body > h1 {
+    color: #f1fffa;
+    text-shadow: 0px 0px 20px rgba(241, 255, 250, 0.25);
+    font-size: 5em;
+    font-weight: bold;
+    padding: 0;
+    margin: -20px 0 30px 0;
+}
+.social-media {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+    color: #f1fffa;
+    text-shadow: 0 0 25px #f1fffa;
+    opacity: 0.8;
+    margin: 0;
+}
+.main-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+.nature-text, .portrait-text, .event-text, .concert-text {
+    position: absolute;
+    top: 0;
+    color: #f1fffa;
+    width: 100%;
+    height: 100%;
+}
+.nature-main, .portrait-main, .event-main, .concert-main {
+    position: relative;
+}
+.nature-main > img, .portrait-main > img, .event-main > img, .concert-main > img {
+    border-radius: 10px;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.95) 32.29%, rgba(0, 0, 0, 0.15) 100%), url(<path-to-image>), lightgray 50% / cover no-repeat;
+    box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.50);
+}
+.nature-text > section {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    height: 100%;
+    justify-content: center;
+    margin: 0 0 0 50px;
+}
+.nature-whatis {
+    color: #F1FFFA;
+    text-shadow: 0px 0px 75px #F1FFFA;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px; /* 73.333% */
+    margin: 0;
+}
+.nature-title {
+    color: #F1FFFA;
+    text-shadow: 0px 0px 75px #F1FFFA;
+    font-family: Montserrat;
+    font-size: 51px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px; /* 43.137% */
+    margin: 0;
+}
+
+.portrait-text > section {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    height: 100%;
+    justify-content: center;
+    margin: 0 0 0 400px;
+}
+.portrait-whatis {
+    color: #F1FFFA;
+    text-shadow: 0px 0px 75px #F1FFFA;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px; /* 73.333% */
+    margin: 0;
+}
+.portrait-title {
+    color: #F1FFFA;
+    text-shadow: 0px 0px 75px #F1FFFA;
+    font-family: Montserrat;
+    font-size: 51px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px; /* 43.137% */
+    margin: 0;
+}
+
+.event-text > section {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    height: 100%;
+    justify-content: center;
+    margin: 0 0 0 50px;
+}
+.event-whatis {
+    color: #F1FFFA;
+    text-shadow: 0px 0px 75px #F1FFFA;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px; /* 73.333% */
+    margin: 0;
+}
+.event-title {
+    color: #F1FFFA;
+    text-shadow: 0px 0px 75px #F1FFFA;
+    font-family: Montserrat;
+    font-size: 51px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px; /* 43.137% */
+    margin: 0;
+}
+
+.concert-text > section {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    height: 100%;
+    justify-content: center;
+    margin: 0 0 0 400px;
+}
+.concert-whatis {
+    color: #F1FFFA;
+    text-shadow: 0px 0px 75px #F1FFFA;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px; /* 73.333% */
+    margin: 0;
+}
+.concert-title {
+    color: #F1FFFA;
+    text-shadow: 0px 0px 75px #F1FFFA;
+    font-family: Montserrat;
+    font-size: 51px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px; /* 43.137% */
+    margin: 0;
+}
+
+.main-footer {
+    display: flex;
+    padding: 20px 0px 50px 0px;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    align-self: stretch;
+    background: rgba(0, 0, 0, 0.43);
+    box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.50);
+}
+.social-media2 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    color: #f1fffa;
+    text-shadow: 0 0 25px #f1fffa;
+    opacity: 0.8;
+    margin: 0;
+}
+.main-footer > p {
+    color: #F1FFFA;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px; /* 110% */
+}
+
+.nature-head {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.nature-paragraph {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 50px;
+    max-width: 525px;
+}
+.nature-head > img {
+    box-shadow: 0px 0px 100px 0px rgba(0, 0, 0, 0.50);
+    border-radius: 15px;
+}
+.nature-photography-page > h1 {
+    color: #F1FFFA;
+    text-shadow: 0px 0px 50px rgba(241, 255, 250, 0.50);
+    font-family: Montserrat;
+    font-size: 128px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 0;
+    margin-bottom: 0px;
+    margin-top: 100px;
+}
+.nature-photography-page > h2 {
+    color: #F1FFFA;
+    text-shadow: 0px 0px 50px rgba(241, 255, 250, 0.50);
+    font-family: Montserrat;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 77.5px;
+    margin-bottom: 0;
+}
+.nature-paragraph > p {
+    color: #F1FFFA;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 25px; /* 156.25% */
+    text-align: justify;
+}
