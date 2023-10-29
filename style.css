@@ -1,9 +1,12 @@
 body {
     font-family: montserrat;
-    min-width: 1000px;
+    min-width: 1200px;
+    word-spacing: 5px;
+    text-indent: 0px;
     width: 100%;
     display: inline-flex;
     flex-direction: column;
+    letter-spacing: 0.05em;
     align-items: center;
     gap: 75px;
     margin: 10px 0 0 0;
@@ -13,9 +16,17 @@ figure {
     margin: 0;
     padding: 0;
 }
+figcaption {
+    color: #f1fffa50;
+    font-size: 12px;
+    text-transform: lowercase;
+}
 a {
     text-decoration: none;
     color: #F1FFFA;
+}
+p::first-letter {
+    text-transform: uppercase;
 }
 @font-face {
     font-family: Montserrat;
@@ -28,11 +39,12 @@ a {
     justify-content: space-between;
     width: 100%;
 }
-.main-menu {
+.main-menu > ul {
     display: inline-flex;
     flex-direction: row;
     align-items: center;
     gap: 30px;
+    list-style: none;
 }
 .main-header {
     display: flex;
@@ -44,7 +56,7 @@ a {
     border-right: solid 1px #f1fffa;
     padding: 0 30px 0 0;
 }
-.main-menu > section > a {
+.main-menu > ul > li > a {
     text-shadow: 0 0 15px #f1fffa ;
 }
 .menu6 > a {
@@ -108,7 +120,7 @@ a {
 .nature-main, .portrait-main, .event-main, .concert-main {
     position: relative;
 }
-.nature-main > img, .portrait-main > img, .event-main > img, .concert-main > img {
+.nature-main > figure > img, .portrait-main > figure > img, .event-main > figure > img, .concert-main > figure > img {
     border-radius: 10px;
     background: linear-gradient(90deg, rgba(0, 0, 0, 0.95) 32.29%, rgba(0, 0, 0, 0.15) 100%), url(<path-to-image>), lightgray 50% / cover no-repeat;
     box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.50);
@@ -120,7 +132,8 @@ a {
     gap: 30px;
     height: 100%;
     justify-content: center;
-    margin: 0 0 0 50px;
+    float: left;
+    margin-left: 50px;
 }
 .nature-whatis {
     color: #F1FFFA;
@@ -150,7 +163,8 @@ a {
     gap: 30px;
     height: 100%;
     justify-content: center;
-    margin: 0 0 0 400px;
+    float: right;
+    margin-right: 50px;
 }
 .portrait-whatis {
     color: #F1FFFA;
@@ -180,7 +194,8 @@ a {
     gap: 30px;
     height: 100%;
     justify-content: center;
-    margin: 0 0 0 50px;
+    float: left;
+    margin-left: 50px;
 }
 .event-whatis {
     color: #F1FFFA;
@@ -210,7 +225,8 @@ a {
     gap: 30px;
     height: 100%;
     justify-content: center;
-    margin: 0 0 0 400px;
+    float: right;
+    margin-right: 50px;
 }
 .concert-whatis {
     color: #F1FFFA;
@@ -242,6 +258,9 @@ a {
     align-self: stretch;
     background: rgba(0, 0, 0, 0.43);
     box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.50);
+}
+.main-footer > p {
+    text-transform: uppercase;
 }
 .social-media2 {
     width: 100%;
@@ -279,7 +298,7 @@ a {
     gap: 50px;
     max-width: 525px;
 }
-.nature-head > img {
+.nature-head > aside > figure > img {
     box-shadow: 0px 0px 100px 0px rgba(0, 0, 0, 0.50);
     border-radius: 15px;
     max-width: 400px;
@@ -385,4 +404,128 @@ a {
     background: #F18F01;
     color: #FFF;
     transition: 0.2s ease;
+}
+
+.paragraph-body {
+    max-width: 750px;
+}
+.paragraph-body > p {
+    color: #F1FFFA;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    text-align: justify;
+    text-shadow: 0px 0px 50px rgba(241, 255, 250, 0.50);
+    /* font-family: Montserrat;
+    font-size: 22px; */
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 118.182% */
+}
+
+.contact-form > fieldset {
+    width: 750px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    color: #f1fffa;
+    padding: 25px;
+    border: 2px solid #f1fffa50;
+    border-radius: 15px;
+}
+.contact-form > fieldset > legend {
+    padding: 0 10px;
+    color: #f1fffa75;
+}
+
+.gender-form {
+    display: flex;
+    gap: 25px;
+    flex-direction: row;
+    align-items: center;
+}
+
+.first-name, .last-name, .phoneNumber, .e-mail {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    width: 350px;
+}
+
+#message {
+    border-radius: 5px;
+    border: 1px solid #c0c0c0;
+    padding: 5px;
+}
+#firstname, #lastname, #phone, #email {
+    height: 25px;
+    width: 97%;
+    border-radius: 5px;
+    border: 1px solid #c0c0c0;
+    padding: 5px;
+}
+.form-part1, .form-part2 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+}
+
+.message-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#submit {
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    border: solid 2px #F18F01;
+    color: #f1fffa;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px;
+    background-color: #f18F01;
+    cursor: pointer;
+}
+#submit:hover {
+    box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.50);
+    transition: 0.2s ease;
+}
+.submit-button {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.agree-checkbox {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    text-align: justify;
+}
+#agree {
+    width: 20px;
+    height: 20px;
+}
+.required-text {
+    color: #f18f01;
+    font-weight: 400;
+}
+
+@media screen and (min-width: 1200px) {
+    body {
+        width: 1200px;
+    }
+}
+@media screen and (max-width: 768px) {
+    body {
+        max-width: 750px;
+    }
+    
 }
