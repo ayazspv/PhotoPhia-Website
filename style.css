@@ -518,11 +518,6 @@ p::first-letter {
     font-weight: 400;
 }
 
-@media screen and (min-width: 1200px) {
-    body {
-        width: 1200px;
-    }
-}
 @media screen and (max-width: 768px) {
     body {
         max-width: 750px;
