@@ -1,9 +1,9 @@
 body {
     font-family: montserrat;
-    min-width: 1200px;
     word-spacing: 5px;
     text-indent: 0px;
     width: 100%;
+    min-width: 1200px;
     display: inline-flex;
     flex-direction: column;
     letter-spacing: 0.05em;
@@ -91,6 +91,7 @@ p::first-letter {
     font-weight: bold;
     padding: 0;
     margin: -20px 0 30px 0;
+    text-align: center;
 }
 .social-media {
     width: 100%;
@@ -109,6 +110,7 @@ p::first-letter {
     flex-direction: column;
     align-items: center;
     gap: 50px;
+    width: 1000px;
 }
 .nature-text, .portrait-text, .event-text, .concert-text {
     position: absolute;
@@ -258,6 +260,7 @@ p::first-letter {
     align-self: stretch;
     background: rgba(0, 0, 0, 0.43);
     box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.50);
+    width: 100%;
 }
 .main-footer > p {
     text-transform: uppercase;
@@ -520,23 +523,51 @@ p::first-letter {
 
 @media screen and (max-width: 768px) {
     body {
-        max-width: 750px;
+        min-width: 700px;
+        width: 768px;
     }
     .main-header {
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 1000px;
+        width: 90%;
         gap: 25px;
+    }
+    .main-body {
+        width: 90%;
     }
     .header-head {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
-        width: 100%;
+        width: 90%;
     }
     .nature-main > figure > img, .portrait-main > figure > img, .event-main > figure > img, .concert-main > figure > img {
-        border-radius: 50px;
+        border-radius: 25px;
+        width: 95%;
+    }
+    .main-menu > ul {
+        display: inline-flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 30px;
+        list-style: none;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .main-footer > p {
+        width: 90%;
+        font-size: 1em;
+    }
+    .nature-text > section, .portrait-text > section, .event-text > section, .concert-text > section {
+        float: left;
+        margin-left: 3%;
+    }
+    .nature-whatis, .portrait-wahtis, .event-whatis, .concert-whatis {
+        font-size: 1.5rem;
+    }
+    .nature-title, .portrait-title, .event-title, .concert-title {
+        font-size: 3rem;
     }
 }
