@@ -59,6 +59,10 @@ p::first-letter {
 .main-menu > ul > li > a {
     text-shadow: 0 0 15px #f1fffa ;
 }
+.main-menu > ul > li > a:visited {
+    font-weight: bold;
+    font-style: italic;
+}
 .menu6 > a {
     border: solid 1px #f18f01;
     padding: 5px 10px;
