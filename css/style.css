@@ -305,6 +305,12 @@ p::first-letter {
     gap: 50px;
     max-width: 525px;
 }
+.selected-link > a {
+    text-decoration: underline;
+}
+.selected-link > a:visited {
+    color: #F18F01;
+}
 .nature-head > aside > figure > img {
     box-shadow: 0px 0px 100px 0px rgba(0, 0, 0, 0.50);
     border-radius: 15px;
