@@ -1,5 +1,5 @@
 Student name: Ayaz Saadatpour Vahid
 Student number: 720287
 Student class: IT1e
-GitHub Repository: https://github.com/ayazspv/PhotoPhia-Website.git
+GitHub Repository: https://github.com/ayazspv/PhotoPhia-Website
 GitHub Pages URL: https://ayazspv.github.io/PhotoPhia-Website/
