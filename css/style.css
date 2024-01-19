@@ -311,6 +311,7 @@ p::first-letter {
 .selected-link > a:visited {
     color: #F18F01;
 }
+
 .nature-head > aside > figure > img {
     box-shadow: 0px 0px 100px 0px rgba(0, 0, 0, 0.50);
     border-radius: 15px;
@@ -562,6 +563,29 @@ p::first-letter {
     transition: background-color 0.4s;
     cursor: pointer;
 }
+.cookies-response:active {
+    background-color: #ffffffeb;
+}
+.Main-table {
+    width: 80%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  th {
+    background-color: #f1fffa;
+  }
+  tbody tr:nth-child(even) {
+    background-color: #f1fffab1;
+  }
+  tbody tr:nth-child(odd) {
+    color:#F1FFFA;
+  }
+
 
 @media screen and (max-width: 768px) {
     body {
@@ -675,5 +699,45 @@ p::first-letter {
         padding: 25px;
         border: 2px solid #f1fffa50;
         border-radius: 15px;
+    }
+}
+body {
+    font-family: Montserrat;
+    word-spacing: 5px;
+    text-indent: 0px;
+    width: 100%;
+    min-width: auto; /* Remove the fixed minimum width */
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 0.05em;
+    align-items: center;
+    gap: 20px; /* Adjusted for smaller screens */
+    margin: 10px 0 0 0;
+    background: var(--Background-PhotoPhia, linear-gradient(180deg, #120D31 36.46%, #005C69 100%));
+}
+
+/* ... (Other styles remain unchanged) */
+
+@media screen and (max-width: 400px) {
+    body {
+        gap: 10px;
+        zoom: 0.5;
+    }
+
+    .main-header, .main-body, .main-body-footer, .main-footer, .nature-main, .portrait-main, .event-main, .concert-main {
+        width: 100%;
+    }
+
+    .main-header {
+        width: 90%;
+    }
+
+    .main-body, .main-body-footer, .work-sample1, .contact-form > fieldset {
+        width: 90%; 
+    }
+
+    .nature-main > figure > img, .portrait-main > figure > img, .event-main > figure > img, .concert-main > figure > img {
+        border-radius: 10px;
+        width: 100%;
     }
 }
